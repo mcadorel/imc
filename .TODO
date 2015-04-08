@@ -5,3 +5,4 @@ FEATURES
 
 BUGS
 - Lorsqu'on appelle Interpretation sans avoir calculé d'IMC, crash.
+- Le clavier gène après avoir saisi les valeurs (activity_main)
