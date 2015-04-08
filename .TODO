@@ -1,0 +1,7 @@
+FEATURES
+- Passer de calcul à interprétation par simple swiping.
+- Sur tablette, présenter les deux en vis-à-vis.
+
+
+BUGS
+- Lorsqu'on appelle Interpretation sans avoir calculé d'IMC, crash.
