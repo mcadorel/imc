@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IMC02</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">Your Body Mass Index</string>
+    <string name="prompt_weight">Weight :</string>
+    <string name="prompt_height">Height :</string>
+    <string name="hint_weight">Your weight in kilograms.</string>
+    <string name="hint_height">Your height in meters.</string>
+    <string name="mega_func">Mega func !</string>
+    <string name="clear">Reset</string>
+    <string name="calc">Evaluate !</string>
+    <string name="result">Result :</string>
+    
+    <string name="title_activity_interpretation">Interpretation</string>
+    <string name="interp_title">Mapping</string>
+    <string name="interp">Mapping</string>
+    <string name="retour">Return</string>
+    
+    <string name="lt165">Below 16.5</string>
+    <string name="lt165label">Severely underweight</string>
+    
+    <string name="lt185">16.5 to 18.5</string>
+    <string name="lt185label">Underweight</string>
+    
+    <string name="lt25">18.5 to 25</string>
+    <string name="lt25label">Healthy weight</string>
+    
+    <string name="lt30">25 to 30</string>
+    <string name="lt30label">Overweight</string>
+    
+    <string name="lt35">30 to 35</string>
+    <string name="lt35label">Obese class I</string>
+    
+    <string name="lt40">35 to 40</string>
+    <string name="lt40label">Obese class II</string>
+    
+    <string name="gt40">Over 40</string>
+    <string name="gt40label">Obese class III</string>
+
+
+</resources>
