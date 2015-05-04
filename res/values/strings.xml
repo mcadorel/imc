@@ -20,24 +20,30 @@
     
     <string name="lt165">- de 16.5</string>
     <string name="lt165label">Dénutrition</string>
+    <string name="lt165tip">Il faut manger !</string>
     
     <string name="lt185">16.5 à 18.5</string>
     <string name="lt185label">Maigreur</string>
+    <string name="lt185tip">Vous pouvez manger plus.</string>
     
     <string name="lt25">18.5 à 25</string>
     <string name="lt25label">Corpulence moyenne</string>
+    <string name="lt25tip">Tout va bien !</string>
     
     <string name="lt30">25 à 30</string>
     <string name="lt30label">Surpoids</string>
+    <string name="lt30tip">Vous êtes en surpoids.</string>
     
     <string name="lt35">30 à 35</string>
     <string name="lt35label">Obésité modérée</string>
+    <string name="lt35tip">Attention à ne pas trop manger..</string>
     
     <string name="lt40">35 à 40</string>
     <string name="lt40label">Obésité sévère</string>
+    <string name="lt40tip">Vous devriez consulter un médecin.</string>
     
     <string name="gt40">+ de 40</string>
     <string name="gt40label">Obésité massive</string>
-
+    <string name="gt40tip">Il faut arrêter de manger !</string>
 
 </resources>
