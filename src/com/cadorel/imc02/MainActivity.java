@@ -126,17 +126,19 @@ public class MainActivity extends Activity
     		case R.id.interp_button:
     			// Récupérer la dernière IMC calculée le cas échéant, 
     			// puis afficher le tableau de correspondances 
-    			Intent i;
-        		i = new Intent(
-        				getApplicationContext(),
-        				Interpretation.class);
+    			
         		if (null != currentIMC)
         		{
+        			Intent i;
+            		i = new Intent(
+            				getApplicationContext(),
+            				Interpretation.class);
         			i.putExtra("label", currentIMC.getLabel());
-        			i.putExtra("idAssocie", currentIMC.getIdAssocie());
+        			i.putExtra("idAssocie", currentIMC.getIdAssocie());        			
+        			startActivity(i);
+        			break;
         		}
-        		startActivity(i);
-    			break;
+        		
     		}
     	}
     };

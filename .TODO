@@ -1,8 +1,9 @@
 FEATURES
 - Passer de calcul à interprétation par simple swiping.
+	--> Il faut utiliser un ViewPage, à base de fragments ?
 - Sur tablette, présenter les deux en vis-à-vis.
 
 
 BUGS
-- Lorsqu'on appelle Interpretation sans avoir calculé d'IMC, crash.
+- Lorsqu'on appelle Interpretation sans avoir calculé d'IMC, crash. DONE
 - Le clavier gène après avoir saisi les valeurs (activity_main)
