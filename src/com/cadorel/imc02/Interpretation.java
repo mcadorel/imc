@@ -40,8 +40,9 @@ public class Interpretation extends Activity {
 			// Récupérer le conseil approprié
 			resId = getResources().getIdentifier(currentIMC.getIdConseil(), "string", getPackageName());
 			String conseil = getResources().getString(resId);
-			
-			// Toast.makeText(Interpretation.this, conseil, Toast.LENGTH_SHORT).show();
+			// et l'afficher dans la textviewx appropriée
+			tv = (TextView)findViewById(R.id.tip);
+			tv.setText(conseil);
 		}
 		catch(Exception e){
 			Toast.makeText(Interpretation.this, e.getMessage(), Toast.LENGTH_SHORT).show();
