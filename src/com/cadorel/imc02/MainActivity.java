@@ -19,7 +19,6 @@ public class MainActivity extends Activity
 {
 	// Déclaration des widgets
 	private final String default_result = "Resultat : entrez un poids et une taille.";
-	private final String megaString = "Vous faites un poids parfait !";
 	Button calc_button 		= null;
 	Button clear_button 	= null;
 	Button interpreter		= null;
@@ -27,7 +26,6 @@ public class MainActivity extends Activity
 	EditText edit_height 	= null;
 	TextView result 		= null;
 	RadioGroup scale		= null;
-	CheckBox mega_func 		= null;
 	
 	// Catégories d'IMC
 	IMC[] categories = {
@@ -48,7 +46,6 @@ public class MainActivity extends Activity
     	interpreter = (Button) findViewById(R.id.interp_button);
     	edit_weight = (EditText)findViewById(R.id.edit_weight);
     	edit_height = (EditText)findViewById(R.id.edit_height);
-    	mega_func = (CheckBox)findViewById(R.id.methode);
     	scale = (RadioGroup)findViewById(R.id.choose_scale);
     	result = (TextView)findViewById(R.id.show_result);
     	
@@ -92,21 +89,15 @@ public class MainActivity extends Activity
         			float hValue = Float.valueOf(edit_height.getText().toString());
         			float wValue = Float.valueOf(edit_weight.getText().toString());
         			
-        			if (!mega_func.isChecked())
-            		{
-        				
-        				currentIMC = new IMC(wValue / 
-        						(float)Math.pow(
-        								(scale.getCheckedRadioButtonId() == R.id.select_cm?hValue/100:hValue), 2
-        								));
-        				result.setText(String.format("Ton IMC est %s. Cela correspond à : %s.",
-        						Double.toString(currentIMC.getValue()),
-        						currentIMC.getLabel()));
-            		}
-            		else
-            		{
-        				result.setText(megaString);
-            		}
+
+    				currentIMC = new IMC(wValue / 
+    						(float)Math.pow(
+    								(scale.getCheckedRadioButtonId() == R.id.select_cm?hValue/100:hValue), 2
+    								));
+    				result.setText(String.format("Ton IMC est %s. Cela correspond à : %s.",
+    						Double.toString(currentIMC.getValue()),
+    						currentIMC.getLabel()));
+
         		}
         		else
         		{

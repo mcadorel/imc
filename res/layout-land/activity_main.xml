@@ -92,11 +92,6 @@
     </RadioGroup>
     
     <!-- Choix de la méthode -->
-	<CheckBox
-        android:id="@+id/methode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/mega_func" />
 
 	<LinearLayout
 	    android:layout_width="match_parent"
@@ -127,13 +122,12 @@
 	<!-- Afficher le tableau d'interprétation -->
 	  
     <!-- Zone d'affichage du résultat -->
-    <TextView
-        android:id="@+id/show_result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/result"
-        android:textColor="#FF6600" />
 
-
+	<TextView
+	    android:id="@+id/show_result"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/result"
+	    android:textColor="#FF6600" />
 
 </LinearLayout>
