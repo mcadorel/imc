@@ -28,21 +28,21 @@ public class Interpretation extends Activity {
 		back_button.setOnClickListener(listener);
 		
 		Bundle b = getIntent().getExtras();
-		String idAssocie = b.getString("idAssocie");
-		String idConseil = b.getString("idConseil");
+		
+		double value = b.getDouble("value");
+		IMC currentIMC = new IMC(value);
 		
 		try{
-			// Récupération de l'ID pour colorer la ligne correspondant à l'IMC calculé
-			int resId = getResources().getIdentifier(idAssocie, "id", getPackageName());
+			// Colorer en orange le textView du dernier IMC calculé
+			int resId = getResources().getIdentifier(currentIMC.getIdAssocie(), "id", getPackageName());
 			TextView tv = (TextView)findViewById(resId);
 			tv.setTextColor(Color.parseColor("#FF6600"));
 			
-			// restauration de l'ID du conseil 
-			resId = getResources().getIdentifier(idConseil, "id", getPackageName());
-			String conseil = getResources().getString(idConseil);
-			
-			// et affichage du conseil dans la textbox appropriée
-			tv = (TextView)findViewById(R.id.tips);
+			// Récupérer le conseil approprié
+			resId = getResources().getIdentifier(currentIMC.getIdConseil(), "string", getPackageName());
+			String conseil = getResources().getString(resId);
+			// et l'afficher dans la textviewx appropriée
+			tv = (TextView)findViewById(R.id.tip);
 			tv.setText(conseil);
 		}
 		catch(Exception e){

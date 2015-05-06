@@ -3,7 +3,7 @@ package com.cadorel.imc02;
 public class IMC {
 	private double value;
 	private String label;
-	private String idConseil;;
+	private String idConseil;
 	private String idAssocie;
 
 	
@@ -56,4 +56,5 @@ public class IMC {
 	public void setValue(double value) {this.value = value;}
 	public String getLabel() {return this.label;}
 	public String getIdAssocie() {return this.idAssocie;}
+	public String getIdConseil() {return this.idConseil;}
 }

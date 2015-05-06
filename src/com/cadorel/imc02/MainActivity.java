@@ -133,8 +133,7 @@ public class MainActivity extends Activity
             		i = new Intent(
             				getApplicationContext(),
             				Interpretation.class);
-        			i.putExtra("label", currentIMC.getLabel());
-        			i.putExtra("idAssocie", currentIMC.getIdAssocie());        			
+        			i.putExtra("value", currentIMC.getValue());        			
         			startActivity(i);
         			break;
         		}
