@@ -1,7 +1,11 @@
 FEATURES
 - Passer de calcul à interprétation par simple swiping.
 	--> Il faut utiliser un ViewPage, à base de fragments ?
-- Sur tablette, présenter les deux en vis-à-vis.
+- En orientation paysage, présenter les deux en vis-à-vis. DONE
+- Griser le bouton 'interprétation' tant que l'IMC n'a pas été calculé,
+ou que les valeurs poids/taille ont changé.
+
+- strings : certaines restent sans traduction.
 
 
 BUGS

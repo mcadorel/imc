@@ -42,7 +42,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal" >
+
+            <requestFocus />
+
+        </EditText>
 
     </LinearLayout>
 
@@ -64,8 +68,6 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberDecimal" >
-
-            <requestFocus />
         </EditText>
 
     </LinearLayout>
