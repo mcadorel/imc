@@ -28,15 +28,22 @@ public class Interpretation extends Activity {
 		back_button.setOnClickListener(listener);
 		
 		Bundle b = getIntent().getExtras();
-		String label = b.getString("label");
 		String idAssocie = b.getString("idAssocie");
-		// Toast.makeText(Interpretation.this, label, Toast.LENGTH_SHORT).show(); // pour le débug
+		String idConseil = b.getString("idConseil");
 		
-		// Colorer en orange le textView du dernier IMC calculé
 		try{
+			// Récupération de l'ID pour colorer la ligne correspondant à l'IMC calculé
 			int resId = getResources().getIdentifier(idAssocie, "id", getPackageName());
 			TextView tv = (TextView)findViewById(resId);
 			tv.setTextColor(Color.parseColor("#FF6600"));
+			
+			// restauration de l'ID du conseil 
+			resId = getResources().getIdentifier(idConseil, "id", getPackageName());
+			String conseil = getResources().getString(idConseil);
+			
+			// et affichage du conseil dans la textbox appropriée
+			tv = (TextView)findViewById(R.id.tips);
+			tv.setText(conseil);
 		}
 		catch(Exception e){
 			Toast.makeText(Interpretation.this, e.getMessage(), Toast.LENGTH_SHORT).show();
