@@ -3,7 +3,7 @@ package com.cadorel.imc02;
 public class IMC {
 	private double value;
 	private String label;
-	private String conseil = "";
+	private String idConseil;;
 	private String idAssocie;
 
 	
@@ -16,37 +16,37 @@ public class IMC {
 		// Interprétation de l'IMC pour établir un label
 		if (this.value < 16.5) {
 			this.label = "Dénutrition";
-			this.conseil = "";
+			this.idConseil = "lt165tip";
 			this.idAssocie = "lt165";
 		}
 		else if (this.value < 18.5) {
 			this.label = "Maigreur";
-			this.conseil = "";
+			this.idConseil = "lt185tip";
 			this.idAssocie = "lt185";
 		}
 		else if (this.value < 25) {
 			this.label = "Corpulence moyenne";
-			this.conseil = "";
+			this.idConseil = "lt25tip";
 			this.idAssocie = "lt25";
 		}
 		else if (this.value < 30) {
 			this.label = "Surpoids";
-			this.conseil = "";
+			this.idConseil = "lt30tip";
 			this.idAssocie = "lt30";
 		}
 		else if (this.value < 35) {
 			this.label = "Obésité modérée";
-			this.conseil = "";
+			this.idConseil = "lt35tip";
 			this.idAssocie = "lt35";
 		}
 		else if (this.value < 40) {
 			this.label = "Obésité sévère";
-			this.conseil = "";
+			this.idConseil = "lt40tip";
 			this.idAssocie = "lt40";
 		}
 		else {
 			this.label = "Obésité massive";
-			this.conseil = "";
+			this.idConseil = "gt40tip";
 			this.idAssocie = "gt40";
 		}
 	}

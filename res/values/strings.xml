@@ -12,6 +12,8 @@
     <string name="clear">Reset</string>
     <string name="calc">Calculer !</string>
     <string name="result">Résultat :</string>
+    <string name="tip_title">Conseils</string>
+    <string name="tip_default">Calculez votre IMC pour obtenir des conseils alimentaires.</string>
     
     <string name="title_activity_interpretation">Interpretation</string>
     <string name="interp_title">Interprétation de la valeur de l\'IMC</string>
